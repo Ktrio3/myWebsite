@@ -1,53 +1,41 @@
-<?php require("./header.php"); ?>
+<?php include("header.php");?>
+<!-- Page Header -->
+<header class="masthead">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>CTF Blog</h1>
+          <span class="subheading">Recent CTF write-ups and beyond</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
-<div class="jumbotron">
-  <div class="container text-center">
-    <h1>My Portfolio</h1>
-    <p>Projects I have worked on. </p>
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="post-preview">
+        <a href="#">
+          <h2 class="post-title">
+            CTF Blogs coming soon
+          </h2>
+          <h3 class="post-subtitle">
+            A test subtitle
+          </h3>
+        </a>
+        <p class="post-meta">Posted by
+          <a href="#">Kevin Dennis</a>
+          on Octover 15th, 2017</p>
+      </div>
+      <hr>
+      <!-- Pager -->
+      <div class="clearfix">
+        <a class="btn btn-secondary float-right" href="#">Older Posts &rarr;</a>
+      </div>
+    </div>
   </div>
 </div>
-
-<div class="container-fluid bg-3 text-center">
-  <h3>Some of my Work</h3><br>
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br>
-
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br><br>
-
-<?php require("./footer.php"); ?>
+<?php include("footer.php");?>

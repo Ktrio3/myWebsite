@@ -8,6 +8,14 @@ $articles = [
     "file" => "./md/csaw_2017_shia.md",
     "downloads" => []
   ],
+  [
+    "title" => "Hidden Program (Warmup)",
+    "subtitle" => "Exploitation Challenge, Pwn2win 2017",
+    "author" => "Kevin Dennis",
+    "date" => "October 23rd, 2017",
+    "file" => "./md/pwn2win_2017_hidden.md",
+    "downloads" => ["Hidden Program C Code" => "pwn2win_2017_hidden.c"]
+  ],
 ];
 
 function get_article_list($offset)

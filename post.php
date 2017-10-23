@@ -34,6 +34,15 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <?php
+        if(!empty($article['downloads']))
+        {
+          echo "<h3>Downloads</h3>";
+          foreach($article['downloads'] as $name => $link)
+          {
+            echo "<a href='downloads/$link'>$name</a>";
+          }
+          echo "<hr>";
+        }
         $Parsedown = new Parsedown();
         echo $Parsedown->text(fread($f,filesize($article['file'])));
         fclose($f);

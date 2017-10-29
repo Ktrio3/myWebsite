@@ -36,12 +36,12 @@
         <?php
         if(!empty($article['downloads']))
         {
-          echo "<h3>Downloads</h3>";
+          echo "<h3>Downloads</h3><ul>";
           foreach($article['downloads'] as $name => $link)
           {
-            echo "<a href='downloads/$link'>$name</a>";
+            echo "<li><a href='downloads/$link'>$name</a></li>";
           }
-          echo "<hr>";
+          echo "</ul><hr>";
         }
         $Parsedown = new Parsedown();
         echo $Parsedown->text(fread($f,filesize($article['file'])));

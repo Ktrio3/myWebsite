@@ -1,5 +1,13 @@
 <?php
 $articles = [
+	[
+    "title" => "Symlink Attack",
+    "subtitle" => "Systems Security, Fall 2017",
+    "author" => "Kevin Dennis",
+    "date" => "October 29th, 2017",
+    "file" => "./md/symlink_attack.md",
+    "downloads" => ["Setuid Program" => "setuid_program.c", "Python Script" => "symlink_attack.py"]
+  ],
   [
     "title" => "Hidden Program (Warmup)",
     "subtitle" => "Exploitation Challenge, Pwn2win 2017",

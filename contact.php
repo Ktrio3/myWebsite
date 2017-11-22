@@ -59,8 +59,6 @@
       </div>
     </div>
 
-    <hr>
-
 <?php include("footer.php");?>
 <script src="js/contact_me.min.js"></script>
 <script src="js/jqBootstrapValidation.min.js"></script>

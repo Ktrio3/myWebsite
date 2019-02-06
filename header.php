@@ -42,13 +42,7 @@
               <a class="nav-link" href="projects.php">Projects</a>
             </li>-->
             <li class="nav-item">
-              <a class="nav-link" href="about.php">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="resume.php">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.php">Contact</a>
+              <a class="nav-link" href="blog.php">CTF Blog</a>
             </li>
           </ul>
         </div>

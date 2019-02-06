@@ -1,13 +1,4 @@
 <?php include("header.php");?>
-<?php include("articles.php");?>
-<?php
-  if($_GET["offset"])
-    $offset = $_GET["offset"];
-  else
-    $offset = 0;
-
-  $list_of_articles = get_article_list($offset);
-?>
 
 <!-- Page Header -->
 <header class="masthead">
@@ -15,8 +6,6 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="site-heading">
-          <h1>CTF Blog</h1>
-          <span class="subheading">Recent CTF write-ups and beyond</span>
         </div>
       </div>
     </div>
@@ -25,32 +14,56 @@
 
 <!-- Main Content -->
 <div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
-      <p>Below are some of my CTF write-ups. A full list can be found
-        on my github <a href="https://github.com/Ktrio3/ctf_writeups">here</a>.
-      </p>
-      <?php foreach($list_of_articles as $key => $article):?>
-        <div class="post-preview">
-          <a href="post.php?post=<?php echo $offset + $key; ?>">
-            <h2 class="post-title">
-              <?php echo $article['title']; ?>
-            </h2>
-            <h3 class="post-subtitle">
-              <?php echo $article['subtitle']; ?>
+    <div class="row">
+        <div class="col-lg-12 col-md-10 mx-auto">
+            <h3>
+                Kevin Dennis
             </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#"><?php echo $article['author']; ?></a>
-            on <?php echo $article['date']; ?></p>
+            <p>
+                kevindennis@mail.usf.edu<br/>
+                Graduate Research Assistant<br/>
+                University of South Florida<br/>
+            </p>
         </div>
-        <hr>
-      <?php endforeach;?>
-      <!-- Pager -->
-      <div class="clearfix">
-        <a class="btn btn-secondary float-right" href="index.php?offset=<?php echo $offset + 10; ?>">Older Posts &rarr;</a>
-      </div>
     </div>
-  </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-10 mx-auto">
+            <h2>
+                Publications
+            </h2>
+            <ul>
+                <li>
+                    <a href="pubs/transport_lit.pdf">Cybersecurity in Public Transportation: A Literature Review.</a>
+                    Kevin Dennis, Maxat Alibayev,
+                    Sean Barbeau, and Jay Ligatti. Proceedings of the 98th Transportation Research Board Annual Meeting
+                    (TRB), January, 2019.
+                    <ul><li><a href="bib/transport_lit.bib">BibTeX</a></li></ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-10 mx-auto">
+            <h2>
+                Current Projects
+            </h2>
+            <ul>
+                <li><a href="https://www.nctr.usf.edu/2018/02/enhancing-cybersecurity-in-public-transportation-scope/">Enhancing Cybersecurity in Public Transportation</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-10 mx-auto">
+            <h2>
+                WCSC Exploitation Meeting Presentations
+            </h2>
+            <ul>
+                <li>January 23, 2019&mdash;<a href="wcsc/intro.pdf">Intro to Assembly</a></li>
+                <li>January 31, 2019&mdash;<a href="wcsc/bof.pdf">Buffer Overflows</a></li>
+                <li>February 7, 2019&mdash;<a href="wcsc/sqli.pdf">SQL and Code Injection</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
+
 <?php include("footer.php");?>

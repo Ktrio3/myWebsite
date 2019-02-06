@@ -2,7 +2,7 @@
 <?php include("articles.php");?>
 <?php include("Parsedown.php");?>
 <?php
-  if($_GET["post"])
+  if(isset($_GET['post']) && !empty($_GET['post']))
     $post = $_GET["post"];
   else
     $post = 0;
